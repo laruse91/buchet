@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -14,7 +14,7 @@
     ],
     "hosting": {
       "site": "buchet",
-      "public": "public"
+      "public": "dist"
     }
   }
 }
