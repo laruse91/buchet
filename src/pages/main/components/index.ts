@@ -1,0 +1,7 @@
+export * from './HomeSection'
+export * from './ServiceSection'
+export * from './AboutSection'
+export * from './SectionTitle'
+export * from './ProcessSection'
+export * from './PricingSection'
+export * from './ContactsSection'
