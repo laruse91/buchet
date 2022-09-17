@@ -15,7 +15,7 @@ jobs:
 
   build:
     name: Deploy
-    needs: lint
+#    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
