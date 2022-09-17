@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@main
       - name: Linter check
-        run: yarn run ./node_modules/.bin/eslint . --ext .js,.jsx,.ts,.tsx
+        run: yarn run check
 
   build:
     name: Build
