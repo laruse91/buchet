@@ -4,10 +4,18 @@ on:
     branches: [ main ]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@main
+      - name: Linter check
+        run: yarn run lint
+
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@main
       - name: Install dep
         run: yarn install
@@ -37,3 +45,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BUCHEOT }}'
           projectId: bucheot
+          channelId: live

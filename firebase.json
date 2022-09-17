@@ -1,6 +1,5 @@
 {
-  "hosting": [
-    {
+  "hosting": {
     "site": "buchet",
     "public": "build",
     "ignore": [
@@ -15,5 +14,4 @@
       }
     ]
   }
-  ]
 }
