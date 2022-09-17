@@ -3,19 +3,24 @@ on:
   push:
     branches: [ main ]
 
+  workflow_dispatch:
+
 jobs:
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@main
-      - name: Linter check
-        run: yarn run check
+#  lint:
+#    name: Lint
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Install NodeJS
+#        uses: actions/setup-node@v2
+#        with:
+#            node-version: ${{ env.NODE_VERSION }}
+#      - name: Checkout repo
+#        uses: actions/checkout@main
+#      - name: Linter check
+#        run: yarn run lint
 
   build:
     name: Build
-#    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
