@@ -5,6 +5,7 @@ on:
 
 jobs:
   lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -13,6 +14,8 @@ jobs:
         run: yarn run lint
 
   build:
+    name: Deploy
+    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
