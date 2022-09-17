@@ -12,23 +12,47 @@ jobs:
         node-version: [ 18.x ]
 
     steps:
-      - name: checkout
-      - uses: actions/checkout@v3
+      - name: Checkout
+      - uses: actions/checkout@main
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: install modules
-      - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: install
-
-      - name: build project
-      - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: build
-
-#      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Install dep
+      - run: npm ci
+#      - uses: borales/actions-yarn@v3.0.0
 #        with:
-#          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-#          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BUCHEOT }}'
-#          projectId: bucheot
+#          cmd: install
+
+      - name: Build
+      - run: npm build
+#      - uses: borales/actions-yarn@v3.0.0
+#        with:
+#          cmd: build
+
+      - name: Archive artifact
+      - uses: actions/upload-artifact@main
+        with:
+          name: build
+          path: build
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+      - uses: actions/checkout@main
+
+      - name: Download artifact
+      - uses: actions/upload-artifact@main
+        with:
+          name: build
+          path: build
+
+      - name: Deploy to Firebase
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BUCHEOT }}'
+          projectId: bucheot
