@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": ["plugin:@typescript-eslint/recommended"],
+  "extends": ["plugin:@typescript-eslint/recommended", "react-app"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["import", "@typescript-eslint", "react", "react-hooks", "jsx-a11y"],
 
