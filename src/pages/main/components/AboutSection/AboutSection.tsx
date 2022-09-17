@@ -19,14 +19,14 @@ export const AboutSection: FC<Props> = () => {
       <Container>
         <Wrapper>
           <Paper>
-            <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.ABOUT}/>
+            <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.ABOUT} />
 
             <ClientsBlock>
-              {CLIENTS.map(client => (<Progress {...client}/>))}
+              {CLIENTS.map(client => (<Progress key={client.title} {...client} />))}
             </ClientsBlock>
           </Paper>
 
-          <Image src={AboutPng}/>
+          <Image src={AboutPng} />
         </Wrapper>
       </Container>
     </Section>

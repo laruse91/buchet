@@ -5,7 +5,7 @@ type Props = unknown
 
 export const Divider: FC<Props> = () => {
   return (
-    <StyledDiv/>
+    <StyledDiv />
   )
 }
 

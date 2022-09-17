@@ -13,11 +13,11 @@ type Props = {
 export const StepCard: FC<Props> = ({ step, title, description, size = 'M' }) => {
   return (
     <Wrapper size={size}>
-      <Circle size={size} level={3} align="center">{`0${step}`}</Circle>
+      <Circle size={size} level={3} align='center'>{`0${step}`}</Circle>
 
       <Content size={size}>
-        <Title align="center" level={5}>{title}</Title>
-        <Paragraph align="center">{description}</Paragraph>
+        <Title align='center' level={5}>{title}</Title>
+        <Paragraph align='center'>{description}</Paragraph>
       </Content>
     </Wrapper>
   )

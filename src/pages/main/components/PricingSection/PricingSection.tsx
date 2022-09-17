@@ -16,9 +16,9 @@ export const PricingSection: FC<Props> = ({ id }) => {
   return (
     <Section id={id}>
       <Container>
-        <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.PRICING}/>
+        <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.PRICING} />
         <Flex>
-          {TARIFFS.map(tariff => <TariffCard key={tariff.title} {...tariff}/>)}
+          {TARIFFS.map(tariff => <TariffCard key={tariff.title} {...tariff} />)}
         </Flex>
       </Container>
     </Section>

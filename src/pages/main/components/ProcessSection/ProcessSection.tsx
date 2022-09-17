@@ -15,7 +15,7 @@ export const ProcessSection: FC<Props> = ({ id }) => {
   return (
     <Section id={id}>
       <Container>
-        <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.PROCESS}/>
+        <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.PROCESS} />
 
         <Grid>
           {PROCESS_STEPS.map((step, i) => (

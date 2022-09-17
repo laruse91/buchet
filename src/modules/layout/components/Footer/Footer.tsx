@@ -13,21 +13,21 @@ export const Footer: FC<Props> = () => {
         <Container>
           <Flex>
             <Column>
-              <Logo size="small" color="#fff"/>
+              <Logo size='small' color='#fff' />
               <Paragraph>
                 Доверьте бухгалтерский учёт нам
               </Paragraph>
             </Column>
 
             <Column>
-              <Title level={5} color="white">Контакты</Title>
+              <Title level={5} color='white'>Контакты</Title>
               <Paragraph>+7 (995) 1125288</Paragraph>
               <Paragraph>Telegram</Paragraph>
               <Paragraph>Whatsapp</Paragraph>
             </Column>
 
             <Column>
-              <Title level={5} color="white">Помощь</Title>
+              <Title level={5} color='white'>Помощь</Title>
               <Paragraph>
                 Если у Вас есть вопросы, напишите нам удобным для Вас спрособом. Мы всегда на связи и рады ответить на
                 любые вопросы.
@@ -39,7 +39,7 @@ export const Footer: FC<Props> = () => {
 
       <Bottom>
         <Container>
-          <Paragraph align="center">
+          <Paragraph align='center'>
             2022г-Бучёт. Не является публичной офертой
           </Paragraph>
         </Container>

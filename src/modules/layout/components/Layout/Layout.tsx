@@ -13,11 +13,11 @@ export const Layout: FC<Props> = ({ children }) => {
   const tablet = useMedia({ minWidth: 756 })
   return (
     <Wrapper>
-      <Header nav={tablet}/>
+      <Header nav={tablet} />
       <Main>
         {children}
       </Main>
-      <Footer/>
+      <Footer />
       <BottomNav hidden={tablet} />
     </Wrapper>
   )

@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 export const App = () => (
   <>
     <BrowserRouter>
-      <MainPage/>
+      <MainPage />
     </BrowserRouter>
   </>
 )

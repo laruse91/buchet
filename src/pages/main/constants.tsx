@@ -25,27 +25,27 @@ export const ANCHOR = {
 
 export const NAVIGATION = [
   {
-    icon: <HomeIcon/>,
+    icon: <HomeIcon />,
     label: 'Главная',
     anchor: '#' + ANCHOR.HOME,
   },
   {
-    icon: <ServicesIcon/>,
+    icon: <ServicesIcon />,
     label: 'Услуги',
     anchor: '#' + ANCHOR.SERVICE,
   },
   {
-    icon: <ProcessIcon/>,
+    icon: <ProcessIcon />,
     label: 'Процесс',
     anchor: '#' + ANCHOR.PROCESS,
   },
   {
-    icon: <TariffsIcon/>,
+    icon: <TariffsIcon />,
     label: 'Тарифы',
     anchor: '#' + ANCHOR.PRICING,
   },
   {
-    icon: <ContactsIcon/>,
+    icon: <ContactsIcon />,
     label: 'Контакты',
     anchor: '#' + ANCHOR.CONTACTS,
   },
@@ -139,7 +139,7 @@ export const TARIFFS = [
     features: ['7 актов/счетов/упд ', 'Расчет налога, контроль безопасного уровня дохода', 'Создание платежей по страховым взносам и налогам'],
     sale: false,
     description: 'Для ИП на УСН 6%, начинающих предпринимателей с годовым оборотом выручки до 60млн р',
-    period: 'квартал'
+    period: 'квартал',
   },
   {
     title: 'Продвинутый',
@@ -148,7 +148,7 @@ export const TARIFFS = [
     features: ['До 5 сотрудников', 'До 40 исходящих документов', 'Полное взаимодействие с налоговыми органами'],
     sale: true,
     description: 'Для ООО на УСН 6% или 15%, ИП на УСН, ООО на ОСНО',
-    period: 'месяц'
+    period: 'месяц',
   },
   {
     title: 'Разовый',
@@ -163,21 +163,21 @@ export const TARIFFS = [
 export const CONTACTS = [
   {
     title: 'Telegram',
-    contact: '@vilavi91',
-    href: 'https://t.me/vilavi91',
-    icon: <TelegramIcon/>,
+    contact: '@Victory_Lazareva',
+    href: 'https://t.me/Victory_Lazareva',
+    icon: <TelegramIcon />,
   },
   {
     title: 'WhatsApp',
     contact: '+7 995 1125280',
     href: 'https://wa.me/+79951125280',
-    icon: <WhatsappIcon/>,
+    icon: <WhatsappIcon />,
   },
   {
     title: 'Телефон',
     contact: '+7 995 1125280',
     href: 'tel:+79951125280',
-    icon: <PhoneIcon/>,
+    icon: <PhoneIcon />,
   },
 ]
 

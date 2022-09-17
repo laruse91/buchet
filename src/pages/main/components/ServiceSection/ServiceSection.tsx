@@ -17,7 +17,7 @@ export const ServiceSection: FC<Props> = ({ id }) => {
   return (
     <Section id={id}>
       <Container>
-        <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.SERVICE}/>
+        <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.SERVICE} />
 
         <Grid>
           {SERVICE_CARDS.map((card, i) => (

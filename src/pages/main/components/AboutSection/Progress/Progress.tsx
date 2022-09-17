@@ -10,9 +10,9 @@ type Props = {
 export const Progress: FC<Props> = ({ value, title }) => {
   return (
     <div>
-      <Paragraph color="main">{title}</Paragraph>
+      <Paragraph color='main'>{title}</Paragraph>
       <ProgressRange>
-        <FillRange value={value}/>
+        <FillRange value={value} />
       </ProgressRange>
     </div>
   )
@@ -33,7 +33,7 @@ const FillRange = styled.div<{ value: number }>`
   position: relative;
 
   &::after {
-    content: ${({ value }) => '"' + value + '%' + '"'};
+    content: ${({ value }) => `"${value}%"`};
     position: absolute;
     right: -10px;
     bottom: 14px;

@@ -10,13 +10,13 @@ export const Header: FC<Props> = ({ nav }) => {
   return (
     <Wrapper>
       <Container>
-        <Logo/>
+        <Logo />
         <Nav hidden={!nav}>
           {NAV_ITEMS.map(it => (
             <NavItem
+              key={it.to}
               color={FONT_COLOR.MAIN}
               active={false}
-              key={it.to}
               href={it.to}
             >
               {it.text}

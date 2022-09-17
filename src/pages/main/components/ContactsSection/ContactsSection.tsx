@@ -17,9 +17,9 @@ export const ContactsSection: FC<Props> = ({ id }) => {
     <Section id={id}>
       <Container>
         <Cover>
-          <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.CONTACTS}/>
+          <SectionTitle size={!tablet ? 'S' : 'M'} {...SECTION_TITLE.CONTACTS} />
           <Flex>
-            {CONTACTS.map(it => <Contact key={it.title} {...it}/>)}
+            {CONTACTS.map(it => <Contact key={it.title} {...it} />)}
           </Flex>
         </Cover>
       </Container>

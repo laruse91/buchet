@@ -11,8 +11,8 @@ type Props = {
 
 export const Logo: FC<Props> = ({ onClick, color = '#161c2d', size = 'large' }) => {
   return (
-    <A href="/" onClick={onClick} color={color}>
-      <LogoIcon height={size === 'small' ? '24px' : '32px'} width={size === 'small' ? '75px' : '100px'}/>
+    <A href='/' color={color} onClick={onClick}>
+      <LogoIcon height={size === 'small' ? '24px' : '32px'} width={size === 'small' ? '75px' : '100px'} />
     </A>
   )
 }

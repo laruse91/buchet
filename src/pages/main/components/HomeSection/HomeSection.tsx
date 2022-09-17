@@ -22,11 +22,11 @@ export const HomeSection: FC<Props> = ({ id }) => {
             </Paragraph>
           </TextBlock>
 
-          <Img src={HomePng}/>
+          <Img src={HomePng} />
         </Wrapper>
       </Container>
 
-      <Shape/>
+      <Shape />
     </Section>
   )
 }

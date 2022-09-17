@@ -12,7 +12,7 @@ type Props = {
 export const Contact: FC<Props> = ({ title, contact, icon, tag, href }) => {
   return (
     <Wrapper>
-      <Button type={tag} href={href} target='_blank' rel="noreferrer noopener">{icon}</Button>
+      <Button type={tag} href={href} target='_blank' rel='noreferrer noopener'>{icon}</Button>
       {/* <Title align="center" level={5}>{title}</Title> */}
       {/* <Paragraph>{contact}</Paragraph> */}
     </Wrapper>

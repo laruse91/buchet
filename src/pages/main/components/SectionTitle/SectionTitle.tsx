@@ -14,11 +14,11 @@ type Props = {
 export const SectionTitle: FC<Props> = ({ subtitle, title, description, size = 'M' }) => {
   return (
     <Wrapper size={size}>
-      {subtitle && <SubTitle align="center">{subtitle}</SubTitle>}
+      {subtitle && <SubTitle align='center'>{subtitle}</SubTitle>}
 
       <Title level={3} align={FONT_ALIGN.CENTER}>{title}</Title>
-      <Divider/>
-      <Paragraph align="center">{description}</Paragraph>
+      <Divider />
+      <Paragraph align='center'>{description}</Paragraph>
     </Wrapper>
   )
 }

@@ -6,7 +6,6 @@ import React, { FC } from 'react'
 const { TABLET } = BREAKPOINT
 
 export const Title: FC<TypographyTitleProps> = ({ level = 1, children, ...props }) => {
-
   switch (level) {
     case (6):
       return <H6 {...props}>{children}</H6>

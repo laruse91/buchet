@@ -5,7 +5,9 @@ import React, { FC } from 'react'
 type Props = { hidden: boolean }
 
 export const BottomNav: FC<Props> = ({ hidden }) => {
-  if (hidden) return null
+  if (hidden) {
+    return null
+  }
 
   return (
     <Nav>

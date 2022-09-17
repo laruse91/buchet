@@ -9,4 +9,3 @@ export { ReactComponent as ProcessIcon } from './process.svg'
 export { ReactComponent as ServicesIcon } from './services.svg'
 export { ReactComponent as TariffsIcon } from './tariffs.svg'
 
-

@@ -16,13 +16,12 @@ type Props = {
 const { TABLET } = BREAKPOINT
 
 export const TariffCard: FC<Props> = ({ title, price, features, description, promoPrice, period, size = 'M' }) => {
-
   return (
     <Wrapper size={size}>
-      <SubTitle align="center">{title}</SubTitle>
+      <SubTitle align='center'>{title}</SubTitle>
 
       <PriceBlock>
-        <Price level={3} align="center">
+        <Price level={3} align='center'>
           от {promoPrice || price} Р
         </Price>
         <Paragraph>
@@ -30,13 +29,12 @@ export const TariffCard: FC<Props> = ({ title, price, features, description, pro
         </Paragraph>
       </PriceBlock>
 
-
-      <Desc align="center">
+      <Desc align='center'>
         {description}
       </Desc>
 
       <div>
-        {features.map(it => <Feature color="main" align="center" key={it}>{it}</Feature>)}
+        {features.map(it => <Feature key={it} color='main' align='center'>{it}</Feature>)}
       </div>
     </Wrapper>
   )

@@ -12,13 +12,13 @@ type Props = {
   size?: Sizes
 }
 
-export const ServiceCard: FC<Props> = ({ shadow, title, icon, text, size='M' }) => {
+export const ServiceCard: FC<Props> = ({ shadow, title, icon, text, size = 'M' }) => {
   return (
     <Paper shadow={String(shadow)} size={size}>
-      <Img src={icon} alt='ico'/>
-      <Title level={5} align="center">{title}</Title>
-      <Divider/>
-      <Paragraph align="center">{text}</Paragraph>
+      <Img src={icon} alt='ico' />
+      <Title level={5} align='center'>{title}</Title>
+      <Divider />
+      <Paragraph align='center'>{text}</Paragraph>
     </Paper>
   )
 }

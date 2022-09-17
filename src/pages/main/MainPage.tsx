@@ -13,12 +13,12 @@ import React, { FC } from 'react'
 export const MainPage: FC = () => {
   return (
     <Layout>
-      <HomeSection id={ANCHOR.HOME}/>
-      <ServiceSection id={ANCHOR.SERVICE}/>
-      <AboutSection/>
-      <ProcessSection id={ANCHOR.PROCESS}/>
-      <PricingSection id={ANCHOR.PRICING}/>
-      <ContactsSection id={ANCHOR.CONTACTS}/>
+      <HomeSection id={ANCHOR.HOME} />
+      <ServiceSection id={ANCHOR.SERVICE} />
+      <AboutSection />
+      <ProcessSection id={ANCHOR.PROCESS} />
+      <PricingSection id={ANCHOR.PRICING} />
+      <ContactsSection id={ANCHOR.CONTACTS} />
     </Layout>
   )
 }
