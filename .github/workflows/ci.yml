@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: ci
 on:
   push:
     branches: [ main ]
@@ -10,46 +10,32 @@ jobs:
     strategy:
       matrix:
         node-version: [ 18.x ]
-
     steps:
       - name: Checkout
       - uses: actions/checkout@main
         with:
           node-version: ${{ matrix.node-version }}
-
       - name: Install dep
       - run: npm ci
-#      - uses: borales/actions-yarn@v3.0.0
-#        with:
-#          cmd: install
-
       - name: Build
       - run: npm build
-#      - uses: borales/actions-yarn@v3.0.0
-#        with:
-#          cmd: build
-
       - name: Archive artifact
       - uses: actions/upload-artifact@main
         with:
           name: build
           path: build
-
   deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
       - uses: actions/checkout@main
-
       - name: Download artifact
       - uses: actions/upload-artifact@main
         with:
           name: build
           path: build
-
       - name: Deploy to Firebase
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
