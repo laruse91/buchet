@@ -37,7 +37,8 @@
     "lint:fix": "yarn run lint:js:fix",
     "lint:js": "eslint src/ --ext=ts,js,tsx,jsx --quiet",
     "lint:js:fix": "eslint src/ --ext=ts,js,tsx,jsx --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint; npm run typecheck"
   },
   "lint-staged": {
     "src/**/*.(ts|tsx|js|jsx)": [
