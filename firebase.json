@@ -1,8 +1,6 @@
 {
   "hosting": {
-    "site": "buchet",
-    "public": "build/",
-
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -12,6 +10,12 @@
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "hosting": [
+      {
+        "site": "buchet",
+        "public": "build"
       }
     ]
   }
