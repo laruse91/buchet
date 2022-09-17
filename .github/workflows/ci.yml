@@ -11,10 +11,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@main
       - name: Linter check
-        run: yarn run lint
+        run: yarn run eslint . --ext .js,.jsx,.ts,.tsx
 
   build:
-    name: Deploy
+    name: Build
 #    needs: lint
     runs-on: ubuntu-latest
     steps:
