@@ -19,7 +19,6 @@ export const useMedia = (query: Query) => {
   const [isMatch, setIsMatch] = useState(getMatch())
 
   const handleResize = useCallback(() => setIsMatch(getMatch()), [getMatch])
-
   useEffect(() => {
     window.addEventListener('resize', () => handleResize())
     return () => {
