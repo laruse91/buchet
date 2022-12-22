@@ -164,7 +164,7 @@ export const CONTACTS = [
   {
     title: 'Telegram',
     contact: '@VictoriiaLazareva',
-    href: 'https://t.me/Victory_Lazareva',
+    href: 'https://t.me/VictoriiaLazareva',
     icon: <TelegramIcon />,
   },
   {
