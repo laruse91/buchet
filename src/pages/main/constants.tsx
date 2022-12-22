@@ -163,7 +163,7 @@ export const TARIFFS = [
 export const CONTACTS = [
   {
     title: 'Telegram',
-    contact: '@Victory_Lazareva',
+    contact: '@VictoriiaLazareva',
     href: 'https://t.me/Victory_Lazareva',
     icon: <TelegramIcon />,
   },
